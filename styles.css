@@ -1,109 +1,112 @@
-/* styles.css */
-
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
+/* Reset default styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
 }
 
-/* Header section */
-header.hero {
+/* Container to center content */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header and navigation bar styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero section styling */
+#hero {
+    background-color: #5cb85c;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#hero .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #3b5998; /* Choose your desired header color */
-    color: white;
-    padding: 50px 20px;
 }
 
-/* Logo styling */
-header.hero .logo img {
-    width: 150px; /* Adjust logo size */
-    height: auto;
+#hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
-/* Title and tagline styling */
-header.hero .site-title h1 {
-    font-size: 36px;
-    margin: 10px 0;
+#hero .slogan {
+    font-size: 1.5em;
+    font-style: italic;
+    margin-top: 0;
 }
 
-header.hero .site-title p {
-    font-size: 18px;
-    font-weight: lighter;
+/* Section styling */
+section {
+    padding: 20px 0;
 }
 
-/* Call-to-action buttons */
-header.hero .cta-buttons {
-    margin-top: 20px;
+section h2 {
+    margin-bottom: 10px;
+    font-size: 1.8em;
 }
 
-header.hero .cta-btn {
-    text-decoration: none;
-    color: white;
-    background-color: #f4a261; /* Button color */
-    padding: 12px 24px;
-    margin: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-header.hero .cta-btn:hover {
-    background-color: #e76f51; /* Hover effect */
-}
-
-/* Mission & Vision Section */
-.mission-vision {
-    padding: 40px;
-    text-align: center;
-}
-
-.mission-vision h2 {
-    font-size: 30px;
-}
-
-.mission-vision p {
-    font-size: 18px;
-}
-
-/* Focus Areas Section */
-.key-areas {
-    display: flex;
-    justify-content: space-around;
-    padding: 40px;
-}
-
-.key-areas .area {
-    width: 30%;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.key-areas .area h3 {
-    font-size: 24px;
-}
-
-.key-areas .cta-btn {
-    margin-top: 10px;
+/* Focus areas styling */
+.focus-area {
+    margin-bottom: 20px;
 }
 
 /* Footer styling */
 footer {
-    background-color: #3b5998;
-    color: white;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
-    padding: 20px;
-    margin-top: 30px;
 }
 
 footer a {
-    color: #f4a261;
+    color: #5cb85c;
     text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
